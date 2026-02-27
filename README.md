@@ -1,82 +1,21 @@
 🩺 AI Medical Image Analysis System
 
-An AI-powered Medical Image Analysis application built using Google Gemini (Multimodal Vision Model) and Streamlit.
+An AI-powered Medical Image Analysis Web Application built using Google Gemini 2.5 Flash-Lite (Vision Model) and Streamlit.
 
-This system allows users to upload medical images (MRI, CT scan, X-ray, dermatological images, etc.) and generates a structured medical-style analysis report using prompt-engineered generative AI.
+The system allows users to upload medical images such as MRI scans, CT scans, X-rays, and dermatological images, and generates a structured AI-based medical report using advanced prompt engineering.
+
+🔗 Live Demo:
+👉 https://medical-image-assistant--smart-doctor-juideepa.streamlit.app/
+
+⚠️ This project is for educational purposes only and does not replace professional medical advice.
 
 🚀 Features
 
-📤 Upload medical images (JPG, PNG, JPEG)
+🖼️ Upload medical images (JPG, JPEG, PNG)
 
-🧠 AI-based multimodal image understanding using Gemini
+🧠 Multimodal AI analysis using Gemini Vision
 
-📋 Structured medical-style report generation
-
-⚡ Fast inference with Gemini 2.5 Flash-Lite
-
-🔐 Secure API key management using .env
-
-🎨 Clean and professional Streamlit UI
-
-🛠️ Tech Stack
-
-Frontend/UI: Streamlit
-
-AI Model: Google Gemini 2.5 Flash-Lite
-
-Backend Logic: Python
-
-Environment Management: python-dotenv
-
-Version Control: Git & GitHub
-
-📂 Project Structure
-medical-ai/
-│
-├── app.py
-├── ai_doctor.png
-├── requirements.txt
-├── .gitignore
-├── README.md
-├── .env   (not uploaded to GitHub)
-⚙️ Installation & Setup
-1️⃣ Clone the Repository
-2️⃣ Create Virtual Environment
-python -m venv venv
-
-Activate it:
-
-Windows:
-
-venv\Scripts\activate
-
-Mac/Linux:
-
-source venv/bin/activate
-3️⃣ Install Dependencies
-pip install -r requirements.txt
-4️⃣ Add API Key
-
-Create a .env file in the root folder:
-
-GEMINI_API_KEY=your_api_key_here
-
-⚠️ Do not upload .env to GitHub.
-
-5️⃣ Run the Application
-streamlit run app.py
-
-The app will open in your browser.
-
-🧠 How It Works
-
-User uploads a medical image.
-
-The image is sent to Gemini's multimodal model.
-
-A structured medical analysis prompt is applied.
-
-The AI generates:
+📋 Structured Medical Report:
 
 Observations
 
@@ -86,6 +25,48 @@ Severity Assessment
 
 Recommended Next Steps
 
-Disclaimer
+Medical Disclaimer
 
-The output is displayed in a clean medical-report format.
+🔐 Secure API key handling via .env
+
+🌐 Deployed on Streamlit Cloud
+
+🎨 Clean and responsive UI
+
+🛠️ Tech Stack
+
+Python
+
+Streamlit
+
+Google Gemini API (2.5 Flash-Lite)
+
+python-dotenv
+
+Pillow
+
+🧠 How It Works
+
+User uploads a medical image.
+
+The image is processed and sent to Gemini Vision model.
+
+A structured medical prompt guides the AI analysis.
+
+The model generates a professional-style medical report.
+
+Results are displayed in a clean Streamlit interface.
+
+🌍 Deployment
+
+This application is deployed using Streamlit Community Cloud.
+
+To deploy:
+
+Push code to GitHub
+
+Add requirements.txt
+
+Add secrets in Streamlit Cloud (GEMINI_API_KEY)
+
+Deploy directly from repository
